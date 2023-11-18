@@ -1,0 +1,11 @@
+/*
+Variables
+
+This file is injected into the start of every scss module so that all variables are in scope
+*/
+
+@import "_easings";
+@import "_spacings";
+@import "_timings";
+@import "_colors";
+@import "_bootstrap-overrides";

@@ -1,0 +1,34 @@
+/**
+ * Spacings
+ * --------
+ * Spacings variables setup.
+ */
+
+// All values are managed in the v-style-spacings.json. This is used to define the base spacer amount and
+// the number of spacing multiplier variations the theme should support.
+
+// This is the default spacer value and will be used to compile the Bootstrap grid (default value is 6px).
+$spacer: 8px;
+$spacers: (
+    0: 0,
+    1: ($spacer * 1),
+    2: ($spacer * 2),
+    3: ($spacer * 3),
+    4: ($spacer * 4),
+    5: ($spacer * 5),
+    6: ($spacer * 6),
+    7: ($spacer * 7),
+    8: ($spacer * 8),
+    9: ($spacer * 9),
+    10: ($spacer * 10),
+    13: ($spacer * 13),
+    14: ($spacer * 14),
+    15: ($spacer * 15),
+    18: ($spacer * 18),
+    24: ($spacer * 24),
+    35: ($spacer * 35),
+);
+
+// Common spacer values
+$space_grid_gutter: $spacer * 3;
+$space_copy:        $spacer * 4;

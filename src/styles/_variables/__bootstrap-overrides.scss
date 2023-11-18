@@ -1,0 +1,103 @@
+/**
+ * Bootstrap
+ * ---------
+ * Bootstrap variable setup.
+ */
+
+// Bootstrap overrides
+
+$displays: none inline inline-block block flex grid;
+$enable-negative-margins: true;
+
+$utilities: (
+  // position, width and height aren't responsive in the default $utilities array which we need on this project
+  "aspect-ratio":
+    (
+      property: aspect-ratio,
+      values: (
+        square: 1 / 1,
+        rectangle: unquote("16 / 9"),
+      ),
+    ),
+  "background-color": (
+    property: background-color,
+    class: bg,
+    values:
+      map-merge(
+        $utilities-bg-colors,
+        (
+          "reset": inherit,
+        )
+      ),
+  ),
+  "display": (
+    responsive: true,
+    print: true,
+    property: display,
+    class: d,
+    values: $displays,
+  ),
+  "position": (
+    responsive: true,
+    property: position,
+    values: static relative absolute fixed sticky,
+  ),
+  "width": (
+    responsive: true,
+    property: width,
+    class: w,
+    values: (
+      10: 10%,
+      100: 100%,
+      auto: auto,
+    ),
+  ),
+  "height": (
+    responsive: true,
+    property: height,
+    class: h,
+    values: (
+      100: 100%,
+      auto: auto,
+    ),
+  ),
+  "object-fit": (
+    property: object-fit,
+    values: (
+      cover: cover,
+    ),
+  ),
+  "object-position": (
+    property: object-position,
+    values: (
+      center: center,
+    ),
+  ),
+  "order": (
+    responsive: true,
+    property: order,
+    values: (
+      first: -1,
+      0: 0,
+      1: 1,
+      2: 2,
+      3: 3,
+      4: 4,
+      5: 5,
+      last: 6,
+    ),
+  )
+);
+
+// @import "~bootstrap/scss/mixins/banner";
+// @include bsBanner("");
+
+
+// scss-docs-start import-stack
+// Configuration
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/variables-dark";
+@import "~bootstrap/scss/maps";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/utilities";

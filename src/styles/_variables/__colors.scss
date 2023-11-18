@@ -1,0 +1,22 @@
+$grays: ();
+
+$colors: (
+    'grey-light': #f7f6f4,
+    'grey': #D4D4D4,
+    'grey-dark': #6b6b6b,
+    'blue-light': #7591B8,
+    'blue': #434B57,
+    'blue-dark': #073B4C,
+    'blue-darkest': #051f28,
+    'white': #ffffff,
+    'black': #11161A,
+    'turquoise': #52CEBC,
+    'yellow': #FFD166,
+    'red': #ff5c79,
+    'transparent': transparent,
+);
+
+$theme-colors: $colors;
+$utilities-bg-colors: $colors;
+$utilities-text-colors: $colors;
+$utilities-border-colors: $colors;

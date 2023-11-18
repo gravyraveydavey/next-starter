@@ -1,0 +1,51 @@
+//@import 'node_modules/swiper/swiper.scss';
+@import "../vendor/overrides/swiper";
+
+//@import 'node_modules/swiper/modules/navigation.scss';
+//@import 'node_modules/swiper/modules/pagination.scss';
+
+/*! purgecss start ignore */
+
+// overflow fade in / out style transition
+
+// .swiper-slide {
+//   opacity: 0;
+//   transition: visibility 0s linear $carousel-timing,
+//     opacity $carousel-timing $carousel-easing;
+//   visibility: hidden;
+//   &.swiper-slide-active {
+//     opacity: 1;
+//     transition: visibility 0s linear 0s,
+//       opacity $carousel-timing $carousel-easing;
+//     visibility: visible;
+//   }
+// }
+
+// .swiper-container {
+//   overflow: hidden;
+//   &.swiper-initialized {
+//     overflow: visible;
+//   }
+// }
+
+// only transition height + use AOS transitions
+.aos-ready {
+  .swiper-wrapper {
+    transition-property: height;
+  }
+  .swiper-slide {
+    [data-aos="fade-up"].aos-animate {
+      --aos-animation-base: 250ms;
+      opacity: 0;
+      transform: translate(0, var(--aos-animation-distance));
+    }
+    &.swiper-slide-active {
+      [data-aos="fade-up"].aos-animate {
+        opacity: 1;
+        transform: translate(0, 0);
+      }
+    }
+  }
+}
+
+/*! purgecss end ignore */

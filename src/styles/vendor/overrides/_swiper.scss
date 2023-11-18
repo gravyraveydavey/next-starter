@@ -1,0 +1,37 @@
+/*! purgecss start ignore */
+.swiper-wrapper {
+  height: 100%;
+}
+.swiper-wrapper {
+  transition-property: transform;
+  transition-timing-function: $carousel-easing;
+  transition-duration: $carousel-timing;
+}
+.swiper-horizontal {
+  touch-action: pan-y;
+}
+.swiper-vertical {
+  touch-action: pan-x;
+}
+.swiper-slide {
+  flex-shrink: 0;
+  height: 100%;
+  transition-property: transform;
+}
+.swiper-slide-invisible-blank {
+  visibility: hidden;
+}
+// Auto Height
+.swiper-autoheight,
+.swiper-autoheight .swiper-slide {
+  height: auto;
+}
+.swiper-autoheight .swiper-wrapper {
+  align-items: flex-start;
+  transition-property: transform, height;
+}
+.swiper-backface-hidden .swiper-slide {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+/*! purgecss end ignore */
