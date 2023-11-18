@@ -6,7 +6,7 @@ export default function Home() {
       <Hero>
         <h1 className="dave">Hello Dave</h1>
       </Hero>
-      <WysiwygMedia image="/assets/images/placeholder.jpg">
+      <WysiwygMedia image="/placeholder.jpg">
         <p>Some stuff here</p>
       </WysiwygMedia>
     </main>
